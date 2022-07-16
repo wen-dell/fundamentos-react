@@ -4,9 +4,9 @@ const Aleatorio = (props) => {
     return (
         <div>
             <h2>Desafio Aleatório</h2>
-            <p>Número mínimo: { min }</p>
-            <p>Número máximo: { max }</p>
-            <p>Número aleatório: { random }</p>
+            <p><strong>Número mínimo:</strong> { min }</p>
+            <p><strong>Número máximo:</strong> { max }</p>
+            <p><strong>Número aleatório:</strong> { random }</p>
         </div>
     );
 };
