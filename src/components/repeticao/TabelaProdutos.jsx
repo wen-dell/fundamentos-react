@@ -2,9 +2,9 @@ import produtos from "../../data/produtos";
 import "./TabelaProdutos.css";
 
 const TabelaProdutos = (props) => {
-  const rows = produtos.map((produto) => {
+  const rows = produtos.map((produto, i) => {
     return (
-      <tr key={produto.id}>
+      <tr key={produto.id} className={i % 2 === 0 ? 'Par' : 'Impar'}>
         <td>{produto.id}</td>
         <td>{produto.nome}</td>
         <td>{produto.preco}</td>
