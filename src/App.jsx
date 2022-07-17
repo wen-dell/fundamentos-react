@@ -1,5 +1,7 @@
 import "./App.css";
 
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Familia from "./components/basicos/Familia";
 import Card from "./components/layout/Card";
@@ -13,6 +15,12 @@ const App = (props) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#07 - Desafio Repetição" color="#d9bbf9">
+        <TabelaProdutos />        
+      </Card>
+      <Card titulo="#06 - Repetição" color="#d991ba">
+        <ListaAlunos />        
+      </Card>
       <Card titulo="#05 - Componente com Filhos" color="#d56062">
         {/* Comentário em React */}
         <Familia sobrenome="Ferreira">
