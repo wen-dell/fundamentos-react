@@ -1,5 +1,6 @@
 import "./App.css";
 
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Familia from "./components/basicos/Familia";
 import Card from "./components/layout/Card";
 import Aleatorio from "./components/basicos/Aleatorio";
@@ -13,8 +14,11 @@ const App = (props) => (
 
     <div className="Cards">
       <Card titulo="#05 - Componente com Filhos" color="#d56062">
+        {/* Comentário em React */}
         <Familia sobrenome="Ferreira">
-          
+          <FamiliaMembro nome="Pedro" />
+          <FamiliaMembro nome="Ana"  />
+          <FamiliaMembro nome="Letícia" />
         </Familia>
       </Card>
 
