@@ -1,5 +1,6 @@
 import "./App.css";
 
+import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
@@ -17,6 +18,9 @@ const App = (props) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#09 - Comunicação Direta" color="#b270a2">
+        <DiretaPai />
+      </Card>
       <Card titulo="#08 - Renderização Condicional" color="#ff8fb1">
         <ParOuImpar numero={21} />        
         <ParOuImpar numero={19} />
