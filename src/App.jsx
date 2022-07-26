@@ -1,5 +1,7 @@
 import "./App.css";
 
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
@@ -15,6 +17,14 @@ const App = (props) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#08 - Renderização Condicional" color="#ff8fb1">
+        <ParOuImpar numero={21} />        
+        <ParOuImpar numero={19} />
+        <ParOuImpar numero={10} />
+        <ParOuImpar numero={5} />
+        <UsuarioInfo usuario={{nome: 'Fernando'}} />
+        <UsuarioInfo usuario={{nome: ''}} />
+      </Card>
       <Card titulo="#07 - Desafio Repetição" color="#d9bbf9">
         <TabelaProdutos />        
       </Card>
