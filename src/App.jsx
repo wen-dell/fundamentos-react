@@ -1,5 +1,6 @@
 import "./App.css";
 
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
@@ -18,28 +19,31 @@ const App = (props) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#10 - Comunicação Indireta" color="#7a28cb">
+        <IndiretaPai />
+      </Card>
       <Card titulo="#09 - Comunicação Direta" color="#b270a2">
         <DiretaPai />
       </Card>
       <Card titulo="#08 - Renderização Condicional" color="#ff8fb1">
-        <ParOuImpar numero={21} />        
+        <ParOuImpar numero={21} />
         <ParOuImpar numero={19} />
         <ParOuImpar numero={10} />
         <ParOuImpar numero={5} />
-        <UsuarioInfo usuario={{nome: 'Fernando'}} />
-        <UsuarioInfo usuario={{nome: ''}} />
+        <UsuarioInfo usuario={{ nome: "Fernando" }} />
+        <UsuarioInfo usuario={{ nome: "" }} />
       </Card>
       <Card titulo="#07 - Desafio Repetição" color="#d9bbf9">
-        <TabelaProdutos />        
+        <TabelaProdutos />
       </Card>
       <Card titulo="#06 - Repetição" color="#d991ba">
-        <ListaAlunos />        
+        <ListaAlunos />
       </Card>
       <Card titulo="#05 - Componente com Filhos" color="#d56062">
         {/* Comentário em React */}
         <Familia sobrenome="Ferreira">
           <FamiliaMembro nome="Pedro" />
-          <FamiliaMembro nome="Ana"  />
+          <FamiliaMembro nome="Ana" />
           <FamiliaMembro nome="Letícia" />
         </Familia>
       </Card>
