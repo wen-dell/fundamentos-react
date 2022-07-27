@@ -1,5 +1,6 @@
 import "./App.css";
 
+import Input from "./components/formulario/Input";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
@@ -19,6 +20,9 @@ const App = (props) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#11 - Componente Controlado" color="#ffb4b4">
+        <Input />
+      </Card>
       <Card titulo="#10 - Comunicação Indireta" color="#7a28cb">
         <IndiretaPai />
       </Card>
