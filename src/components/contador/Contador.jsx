@@ -23,9 +23,9 @@ class Contador extends React.Component {
     });
   };
 
-  setPasso = (e) => {
+  setPasso = (novoPasso) => {
     this.setState({
-        passo: +e.target.value
+        passo: novoPasso
     });
   };
 
@@ -34,7 +34,7 @@ class Contador extends React.Component {
       <div className="Contador">
         <h2>Contador</h2>
         <Display numero={this.state.numero} />
-        <PassoForm passo={this.state.passo} setPasso={this.state.setPasso} />
+        <PassoForm passo={this.state.passo} setPasso={this.setPasso} />
         <Botoes incrementar={this.incrementar} decrementar={this.decrementar}/>
       </div>
     );
